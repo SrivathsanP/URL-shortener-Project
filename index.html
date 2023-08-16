@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>URL Shortener</h1>
+        <form>
+            <label for="long-url">Enter or Paste your long Url:</label> 
+            <!-- label's 'for' value must have same value as id in input -->
+            <input type="text" id="long-url" name="long-url">
+            <button type="button" id="shorten-btn">Shorten</button>
+        </form>
+        <div id="short-url-container" style="display: none;">
+            <p>Here's your shortend URL:</p>
+            <div id="short-url">
+                <a href="" target="_blank"></a>
+                <button id="copy-btn" type="button">Copy</button>
+            </div>
+        </div>
+        <div class="credit">Made with <span>❤</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
